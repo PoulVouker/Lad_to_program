@@ -32,7 +32,7 @@ public class Password
             System.out.print("Эти пароли не совпадают. Попробуй еще раз: ");
             password2 = input.nextLine();
          }
-         	System.out.print("");
+         	System.out.print("Пароль принят!!");
          	input.close(); 
       }
 }
