@@ -6,33 +6,33 @@ public class Password
 {
       public static void main(String[] args)
       {
-         //Input from user
+         //ввод для пользователя
          String password;
          Scanner input = new Scanner(System.in);
-         System.out.print("Please create your password: ");
+         System.out.print("Пожалуйста, создайте пароль: ");
          password = input.nextLine();
 
-         //Checking password length
+         //проверка длинны пароля
          while( (password.length() < 6) || (password.length() > 10) )
          {
-            System.out.print("This password must be between 6 and 10 characters. Try again: ");
+            System.out.print("Этот пароль должен содержать от 6 до 10 символов. Попробуй еще раз: ");
             password = input.nextLine();
          }
 
-         //Checking to see if passwords contain digit/letter
-         /*Need to add code here */
+         //Проверка, содержат ли пароли цифры / буквы
+         /*Здесь нужно добавить код */
 
-         //Confirming if passwords match
+         //Подтверждение совпадения паролей
          String password2;
-         System.out.print("\nPlease type your password again to confirm: ");
+         System.out.print("\nПожалуйста, введите свой пароль еще раз для подтверждения: ");
          password2 = input.nextLine();
 
          while( !password2.equals(password) )
          {
-            System.out.print("Those passwords do not match. Try again: ");
+            System.out.print("Эти пароли не совпадают. Попробуй еще раз: ");
             password2 = input.nextLine();
          }
-         	System.out.print("OK");
+         	System.out.print("");
          	input.close(); 
       }
 }
